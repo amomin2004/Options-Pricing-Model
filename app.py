@@ -1,4 +1,6 @@
 import streamlit as st
+from black_scholes import black_scholes
+from finance_utils import get_stock_price
 
 # Frontend for the Black-Scholes Calculator
 st.title('Black-Scholes Option Pricing Calculator')
