@@ -11,7 +11,7 @@ def get_stock_price(ticker):
 
     # Fetch stock price from Yahoo Finance
     try:
-        current_price = stock.history(period="1m")['Close'].iloc[-1]
+        current_price = stock.history(period="1d")['Close'].iloc[-1]
     except (IndexError, KeyError):
         try:
             current_price = stock.fast_info['lastPrice']
